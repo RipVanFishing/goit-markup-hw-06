@@ -55,6 +55,25 @@
                 <div class="hero-backdrop is-hidden" data-modal>
                     <div class="hero-modal">
                         <button type="button" class="close-modal" data-modal-close></button>
+                        <form class="modal-form">
+                            <label for="user_name">Имя</label>
+                            <input type="text" id="user_name">
+
+                            <label for="user_tel">Телефон</label>
+                            <input type="tel" id="user_tel">
+                            
+                            <label for="user_mail">Почта</label>
+                            <input type="email" id="user_mail">
+
+                            <label for="comment">Комментарий</label>
+                            <textarea id="comment"></textarea>
+
+                            <input type="checkbox">
+                            <label for="">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+
+                            
+                            
+                        </form>
                     </div>
                 </div>
 
@@ -346,6 +365,20 @@
                         </a></li>
                 </ul>
             </div>
+            <div class="submit-wrapper">
+                <p class="submit-text">Подпишитесь на рассылку</p>
+            
+            <form name="signup_form" class="signup-form">
+                <label type="email" for="email_footer"></label>
+                <input name="email" id="email_footer" placeholder="E-mail" class="area-email">
+                <button class="submit-button" type="submit">Подписаться
+                    <svg class="icon-send" width="24" height="24">
+                        <use href="./images/icons.svg#icon-send"> </use>
+                    </svg>
+                </button>
+
+            </form>
+            </div>  
         </div>
     </footer>
     
