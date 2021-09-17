@@ -561,9 +561,18 @@ header {
   margin-right: auto;
   margin-bottom: 28px;
 }
+.form-field:focus-within > .form-icon {
+  fill: var(--accent-color);
+}
+.form-field:focus-within > .input-form {
+  border-color: var(--accent-color);
+}
+
 .input-form {
   width: 448px;
   height: 40px;
+  padding-left: 42px;
+  border: 1px solid red;
 }
 
 .form-label {
@@ -588,6 +597,7 @@ header {
   position: relative;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 20px;
 }
 .form-area {
   display: block;
@@ -616,7 +626,30 @@ header {
 
   color: #757575;
 }
-
+.form-check {
+  position: relative;
+  margin-left: auto;
+  margin-right: 52px;
+  margin-bottom: 30px;
+}
+.input-check {
+}
+.form-label-check {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.form-check a {
+  color: var(--accent-color);
+}
+.check-icon {
+  position: absolute;
+  top: 50%;
+  left: -18px;
+  transform: translateY(-50%);
+}
 .modal-text {
   font-weight: 700;
   font-size: 20px;
@@ -638,7 +671,7 @@ header {
   letter-spacing: 0.06em;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 30px;
+
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

@@ -90,8 +90,12 @@
                                 <span class="form-label-text">Комментарий</span>
                             </label>
                             
-                            <label name="confirmation" >
-                                 <input type="checkbox">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+                            <label class="form-check" >
+                                 <input class="input-check visually-hidden" name="confirmation" type="checkbox"><span class="form-label-check">Соглашаюсь с рассылкой и принимаю</span> <a href="#">Условия договора</a>
+                                 <svg class="check-icon" width="16" height="15">
+                                     <use href="./images/icons.svg#icon-not-check"></use>
+                                 </svg>
+                                </label>
 
                             <button type="submit" class="modal-button">Отправить</button>
                             
