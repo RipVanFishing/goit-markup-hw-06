@@ -566,13 +566,13 @@ header {
 }
 .form-field:focus-within > .input-form {
   border-color: var(--accent-color);
+  outline: none;
 }
 
 .input-form {
   width: 448px;
   height: 40px;
   padding-left: 42px;
-  border: 1px solid red;
 }
 
 .form-label {
@@ -632,8 +632,10 @@ header {
   margin-right: 52px;
   margin-bottom: 30px;
 }
-.input-check {
+.input-check:checked + .check-icon {
+  fill: var(--accent-color);
 }
+
 .form-label-check {
   font-weight: 400;
   font-size: 14px;
