@@ -420,6 +420,7 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   width: 358px;
+  height: 50px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
@@ -427,6 +428,7 @@ header {
 
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  outline: none;
 }
 
 .submit-button {
@@ -542,13 +544,18 @@ header {
   right: 8px;
   width: 30px;
   height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
-  background-image: url(../images/icons/close.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-modal:hover,
+.close-modal:focus {
+  fill: var(--accent-color);
 }
 .modal-form {
   display: flex;
@@ -573,6 +580,10 @@ header {
   width: 448px;
   height: 40px;
   padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-label {
@@ -590,6 +601,7 @@ header {
   position: absolute;
   top: 50%;
   left: 15px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   transform: translateY(-50%);
 }
@@ -598,6 +610,12 @@ header {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-label-area:focus-within > .form-area {
+  border-color: var(--accent-color);
+  outline: white;
 }
 .form-area {
   display: block;
@@ -605,6 +623,9 @@ header {
   width: 448px;
   padding: 12px 16px;
   resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-area::placeholder {
   font-weight: 400;
@@ -632,10 +653,16 @@ header {
   margin-right: 52px;
   margin-bottom: 30px;
 }
+.input-check ~ .check-icon {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .input-check:checked ~ .check-icon {
   background-color: var(--accent-color);
   fill: var(--accent-color);
-  background-image: url(../images/icons/);
+  background-image: url(../images/icons/iconcheck.svg);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-label-check {
@@ -651,8 +678,9 @@ header {
 .check-icon {
   position: absolute;
   top: 50%;
-  left: -18px;
+  left: -22px;
   transform: translateY(-50%);
+  transition: ;
 }
 .modal-text {
   font-weight: 700;
