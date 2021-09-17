@@ -632,8 +632,10 @@ header {
   margin-right: 52px;
   margin-bottom: 30px;
 }
-.input-check:checked + .check-icon {
+.input-check:checked ~ .check-icon {
+  background-color: var(--accent-color);
   fill: var(--accent-color);
+  background-image: url(../images/icons/);
 }
 
 .form-label-check {
